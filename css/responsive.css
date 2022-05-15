@@ -1,0 +1,32 @@
+@media only screen and (max-width:800px) {
+    .slider .a{
+        font-size: 60px;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .slider .cauta, .slider .inputs {
+        border:5px solid white;
+        font-size: 10px;
+    }
+    .slider .container {
+        width:700px;
+    }
+}
+@media only screen and (max-width:500px) {
+    .slider .menu {
+        width: 80%;
+        padding: 0;
+    }
+    .slider .a {
+        font-size: 35px;
+        align-items: center;
+        margin-top: 0px;
+    }
+    .slider .cauta, .slider .inputs {
+        border:5px solid white;
+        font-size: 10px;
+    }
+    .slider .container {
+        width:400px;
+    }
+}

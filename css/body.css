@@ -1,0 +1,82 @@
+body {
+    font-family:"Playfair Display",times,serif;
+    font-size:15px;
+    line-height:1.5;
+    padding:0;
+    margin:0;
+}
+.titlu{
+    text-transform: capitalize;
+    font: bold 32px "Open Sans";
+    margin-bottom: 30px;
+    text-align: center;
+}
+.descriere1{
+    max-width: 775px;
+    line-height: 2;
+    padding: 0 500px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+/*
+* <--TRANSFORMARI IMAGINI-->
+*/
+.recomandari{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+img.rotateLeft {
+    
+    margin-left: 700px;
+    filter:drop-shadow(10px 10px 5px gray);
+    transform: rotate(-15deg);
+}
+img.rotateRight {
+    margin-left: 100px;
+    filter:drop-shadow(10px 10px 5px gray);
+    transform: rotate(+15deg);
+}
+/*
+* <--HOTELURI DE TOP-->
+*/
+.hotelTop{
+    font-family: "Playfair Display",times,serif;
+    text-transform: capitalize;
+    font: bold 32px;
+    margin-bottom: 30px;
+    text-align: center;
+    margin-top: 30px;
+}
+.checked {
+    color: orange;
+  }
+
+.parallax {
+    background-image: url("../Img/parallax.jpg");
+    min-height: 500px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .descopera{
+    margin-top:100px;
+    margin-left:670px;
+    font-family: "Playfair Display",times,serif;
+}
+/*
+* <--LOADING BAR-->
+*/
+#myProgress {
+    margin-top: 70px;
+    width: 100%;
+    height: 30px;
+    position: relative;
+    background-color: #ddd;
+  }
+#myBar {
+    background-color: #ffb380;
+    width: 10px;
+    height: 30px;
+    position: absolute;
+  }

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="../css/footer.css">
+<link rel="stylesheet" href="../css/responsive.css">
+<link rel="stylesheet" href="../css/header.css">
+<link rel="stylesheet" href="../css/body.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="../javascript/stilScrisImagini.js"></script>
+<script src="../javascript/setTimeoutPageRedirect.js"></script>
+<script src="../javascript/setIntervalMove.js"></script>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<title>Traveling Romania</title></head>
+<header>
+  <div class="slider">
+    <div id="brand"><a class="link-1" href="../html/Travel.html">Traveling Romania</a></div>
+    <nav class="menu">
+      <ul>
+        <li><a class="link-1" href="../html/Travel.html"><b>Acasă</b></a>
+        <li class="dropdown"><a class="link-1" href="../html/Travel.html"><b>Destinații</b></a>
+          <ul class="dropdown-menu">
+            <li><a class="link-1" href="../html/oferte.html"><b>Oferte</b></a></li>
+            <li><a class="link-1" href="../html/tururi.html"><b>Tururi</b></a></li>
+            <li><a class="link-1" href="../html/hoteluri.html"><b>Hoteluri</b></a></li>
+            
+          </ul></li>
+        <li class="dropdown"><a class="link-1" href="../html/contact.html"><b>Contact</b></a>
+        <ul class="dropdown-menu">
+            <li><a class="link-1" href="../html/faq.html"><b>FAQ</b></a></li>
+        </ul></li>
+        <li><a class="link-1" href="../php/inregistrare.php"><b>Înregistrați-vă</b></a></li>
+        <li><a class="link-1" href="../php/autentificare.php"><b>Autentificare</b></a></li>
+      </ul>
+    </nav>
+    <div class="a"><center>Travel is to live</center></div>
+    <div class="slide" >
+      <div class="slideText"><p>București</p></div>
+      <div class="slideText"><p>Timișoara</p></div>
+      <div class="slideText"><p>Sibiu</p></div>
+      <div class="slideText"><p>Iași</p></div>
+      <div class="slideText"><p>Cluj</p></div>
+      <div class="slideText"><p>Constanța</p></div>
+    </div>
+    <ul class="slideImage">
+      <li><span></span></li>
+      <li><span></span></li>
+      <li><span></span></li>
+      <li><span></span></li>
+      <li><span></span></li>
+      <li><span></span></li>
+    </ul>
+    <div class="cauta"><center>Caută destinație</center></div>
+    <div class="container">
+      <form class="form">
+        <input type="text" placeholder="Unde mergeți?" required="required" class="inputs">
+        <input type="text" placeholder="Ckeck-in" required="required" class="inputs">
+        <input type="text" placeholder="Check-out" required="required" class="inputs">
+        <input type="text" placeholder="Buget" required="required" class="inputs">
+        <button onclick="location.href='../html/hoteluri.html'" type="button" >caută</button>
+      </form>
+    </div>
+  </div>
+</header>
+<body>
+  <div class="recomandari">
+    <h1 class="titlu" id="titlu" onmouseover="italicOver()" onmouseout="italicOut()">Câteva dintre destinațiile recomandate de noi</h1>
+    <h3 class="descriere1">Vino alături de noi în una dintre aventurile noastre. Iată câteva imagini de la oameni care au avut experiențe <i>inedite</i> cu noi.</h3>
+    <img src="../Img/Constanta.png" class="rotateLeft" id="image1" onmouseover="imageOver1()" onmouseout="imageOut1()"/>
+    <img src="../Img/Bucuresti1.jpg" class="rotateRight"  id="image2" onmouseover="imageOver2()" onmouseout="imageOut2()"/>
+    <img src="../Img/Cluj1.png" class="rotateLeft"  id="image3" onmouseover="imageOver3()" onmouseout="imageOut3()"/>
+    <button class="descopera" onclick="pageRedirectHoteluri();move();">Descoperă mai multe</button>
+    <div id="myProgress">
+      <div id="myBar"></div>
+    </div>
+    <br></br>
+  </div>
+  <div  class="parallax">
+    <table>
+      <tr><td colspan="3"><h1 class="hotelTop" >Hoteluri de top</h1></td></tr>
+      <tr>
+        <td><img src="../Img/hotel1.jpg" style="margin-left: 50px;"></td>
+        <td><img src="../Img/hotel2.jpg" style="margin-left: 270px;"></td>
+        <td><img src="../Img/hotel3.jpg" style="margin-left: 270px;"></td>
+      </tr>
+      <tr>
+        <td>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+          <span class="fa fa-star checked" style="margin-left:50px;"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+        </td>
+        <td>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <span class="fa fa-star checked" style="margin-left:270px;"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+        </td>
+        <td>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <span class="fa fa-star checked" style="margin-left:270px;"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+        </td>
+      </tr>
+      <tr>
+        <td><a style="margin-left:50px; font-family: Playfair Display,times,serif; font-size: x-large;" href="https://www.grandhotel.ro/jw-marriott">București, România</a></td>
+        <td><a style="margin-left:270px; font-family: Playfair Display,times,serif; font-size: x-large;" href="https://hotelplatinia.ro">Cluj-Napoca, România</a</td>
+        <td><a style="margin-left:270px; font-family: Playfair Display,times,serif; font-size: x-large;" href="https://tresorlepalais.ro">Timișoara, România</a></td>
+      </tr>
+      <tr>
+        <td><span style="margin-left:50px; font-family: Playfair Display,times,serif; font-size: x-large;">De la </span><span style="color: red; font-family: Playfair Display,times,serif; font-size: x-large;">&nbsp 400RON</span></td>
+        <td><span style="margin-left:270px; font-family: Playfair Display,times,serif; font-size: x-large;">De la </span><span style="color: red; font-family: Playfair Display,times,serif; font-size: x-large;">&nbsp 500RON</span></td>
+        <td><span style="margin-left:270px; font-family: Playfair Display,times,serif; font-size: x-large;">De la </span><span style="color: red; font-family: Playfair Display,times,serif; font-size: x-large;">&nbsp 600RON</span></td>
+      </tr>
+    </table>
+  </div>
+  <div style="color: ghostwhite; width: auto; height: 400px;"></div>
+</body>
+<footer>
+  <div class="footer">
+    <table>
+      <tr>
+        <td><p style="margin-left: 200px; font-family: Playfair Display,times,serif; font-size: large;">Despre</p></td>
+        <td><p style="margin-left: 130px; font-family: Playfair Display,times,serif; font-size: large;">Link-uri</p></td>
+        <td><p style="margin-left: 150px; font-family: Playfair Display,times,serif; font-size: large;">Conectează-te</p></td>
+        <td><p style="margin-left: 150px; width: 200px; margin-top: 30px; font-family: Playfair Display,times,serif; font-size: large;">Economisiţi timp şi bani!<br>Abonaţi-vă şi vă vom trimite cele mai bune oferte.</br></p></td>
+      </tr>
+      <tr>
+        <td><p style="width: 500px; margin-left: 30px; font-family: Playfair Display,times,serif; font-size: large;">Fondată în 1996 la Bucuresti, TravelingRomania.com s-a transformat dintr-un mic start-up olandez în una dintre principalele companii de turism digital la nivel mondial. Ca parte a Traveling Holdings Inc., misiunea TravelingRomania.com este de a face ca explorarea lumii să fie la îndemâna tuturor.</p></td>
+        <td><a href="../html/destinatii.html" style="margin-left: 130px; color: floralwhite; font-family: Playfair Display,times,serif; font-size: large;">Destinații</a></td>
+        <td>
+          <a href="#" class="fa fa-facebook" style="margin-left: 120px;"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-instagram"></a>
+        </td>
+        <td><button onclick='pageRedirect();' style="margin-left: 150px; font-family: Playfair Display,times,serif; font-size: large;">Abonează-te</button></td>
+      </tr>
+      <tr>
+        <td><i class='fas fa-map-marker-alt' style="margin-left: 30px;"> Postbus 1639 1000 BP Bucuresti Romania</i></td>
+        <td><a href="../html/contact.html" style="margin-left: 130px; color: floralwhite; font-family: Playfair Display,times,serif; font-size: large;">Contact</a></td>
+        <td></td>
+        <td></td>
+        <td><div id="message" ></div></td>
+      </tr>
+      <tr>
+        <td><i class='fas fa-phone'  style="margin-left: 30px;">+1 242 4942 290</i></td>
+      </tr>
+      <tr>
+        <td><i class="fa fa-envelope"  >info@TravelRomania.com</i></td>
+      </tr>
+    </table>
+    <br>Copyright &copy; 1996<script>new Date().getFullYear()>2015&&document.write("-"+new Date().getFullYear());</script></br>
+  </div>
+</footer>
+</html>

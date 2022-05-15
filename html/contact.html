@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/footer.css">
+        <link rel="stylesheet" href="../css/responsive.css">
+        <link rel="stylesheet" href="../css/header.css">
+        <link rel="stylesheet" href="../css/body.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="../javascript/setTimeoutPageRedirect.js"></script>
+        <script src="../javascript/setIntervalMove.js"></script>
+        <script src="../javascript/formFunction.js"></script>
+        <title>Traveling Romania</title>
+    </head>
+    <header>
+        <div class="slider">
+            <div id="brand"><a class="link-1" href="../html/Travel.html">Traveling Romania</a></div>
+            <nav class="menu">
+                <ul>
+                    <li><a class="link-1" href="../html/Travel.html"><b>Acasă</b></a>
+                    <li class="dropdown"><a class="link-1" href="../html/Travel.html"><b>Destinații</b></a>
+                        <ul class="dropdown-menu">
+                            <li><a class="link-1" href="../html/oferte.html"><b>Oferte</b></a></li>
+                            <li><a class="link-1" href="../html/tururi.html"><b>Tururi</b></a></li>
+                            <li><a class="link-1" href="../html/hoteluri.html"><b>Hoteluri</b></a></li>
+                        </ul></li>
+                    <li class="dropdown"><a class="link-1" href="../html/contact.html"><b>Contact</b></a>
+                        <ul class="dropdown-menu">
+                            <li><a class="link-1" href="../html/faq.html"><b>FAQ</b></a></li>
+                        </ul>
+                    </li>
+                    <li><a class="link-1" href="../php/inregistrare.php"><b>Înregistrați-vă</b></a></li>
+                    <li><a class="link-1" href="../php/autentificare.php"><b>Autentificare</b></a></li>
+                </ul>
+            </nav>
+            <div class="a"><center>Travel is to live</center></div>
+            <center><br><p style="font-size: 70px;">Contact</p></br></center>
+            <ul class="slideImage">
+                <li><span></span></li>
+                <li><span></span></li>
+                <li><span></span></li>
+                <li><span></span></li>
+                <li><span></span></li>
+                <li><span></span></li>
+            </ul>
+        </div>
+    </header>
+    <body>
+        <p style="margin-left:200px;margin-top: 100px; font-family: Playfair Display,times,serif; font-size: 50px;">Say "Hi", Don't be shy.</p>
+        <img id ="animate"src="../Img/avion.png" style="margin-left: 800px; position: relative;" onmouseover="myMoveIn()">
+        <form name="myForm" onsubmit="return validateForm()" method="post">
+            <p style="margin-left:200px;margin-top: 20px; font-family: Playfair Display,times,serif; font-size: 30px;">Nume</p> <br><input type="text" name="nume"  style="margin-left:200px; width: 500px; height: 10px; border-color: gray;"></br>
+            <p style="margin-left:200px;margin-top: 20px; font-family: Playfair Display,times,serif; font-size: 30px;">Telefon</p> <br><input type="text" name="telefon"  style="margin-left:200px; width: 500px; height: 10px; border-color: gray;"></br>
+            <p style="margin-left:200px;margin-top: 20px; font-family: Playfair Display,times,serif; font-size: 30px;">Email</p> <br><input type="text" name="email"  style="margin-left:200px; width: 500px; height: 10px; border-color: gray;"></br>
+            <p style="margin-left:200px;margin-top: 20px; font-family: Playfair Display,times,serif; font-size: 30px;">Mesaj</p> <br><textarea name="mesaj"  rows="15" cols="75" style="border-color: gray; margin-left:200px;"></textarea></br>
+            <input type="submit" value="Submit" style="margin-left: 200px; width: 100px; font-size: 20px; margin-bottom: 20px;">
+        </form>
+        <div id="googleMap" style="width:100%;height:400px;"></div>
+        <script>
+            function myMap() {
+            var mapProp= {
+            center:new google.maps.LatLng(51.508742,-0.120850),
+            zoom:5,
+        };
+        var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+        }
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDZ-8WTFBQygmLnDbB96N6kMIddwJM1uZU&callback=myMap"></script>
+    </body>
+    <footer>
+        <div class="footer">
+            <table>
+                <tr>
+                    <td><p style="margin-left: 200px; font-family: Playfair Display,times,serif; font-size: large;">Despre</p></td>
+                    <td><p style="margin-left: 130px; font-family: Playfair Display,times,serif; font-size: large;">Link-uri</p></td>
+                    <td><p style="margin-left: 150px; font-family: Playfair Display,times,serif; font-size: large;">Conectează-te</p></td>
+                    <td><p style="margin-left: 150px; width: 200px; margin-top: 30px; font-family: Playfair Display,times,serif; font-size: large;">Economisiţi timp şi bani!<br>Abonaţi-vă şi vă vom trimite cele mai bune oferte.</br></p></td>
+                </tr>
+                <tr>
+                    <td><p style="width: 500px; margin-left: 30px; font-family: Playfair Display,times,serif; font-size: large;">Fondată în 1996 la Bucuresti, TravelingRomania.com s-a transformat dintr-un mic start-up olandez în una dintre principalele companii de turism digital la nivel mondial. Ca parte a Traveling Holdings Inc., misiunea TravelingRomania.com este de a face ca explorarea lumii să fie la îndemâna tuturor.</p></td>
+                    <td><a href="../html/destinatii.html" style="margin-left: 130px; color: floralwhite; font-family: Playfair Display,times,serif; font-size: large;">Destinații</a></td>
+                    <td>
+                        <a href="#" class="fa fa-facebook" style="margin-left: 120px;"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                    </td>
+                    <td><button onclick='pageRedirect();' style="margin-left: 150px; font-family: Playfair Display,times,serif; font-size: large;">Abonează-te</button></td>
+                </tr>
+                <tr>
+                    <td><i class='fas fa-map-marker-alt' style="margin-left: 30px;"> Postbus 1639 1000 BP Bucuresti Romania</i></td>
+                    <td><a href="../html/contact.html" style="margin-left: 130px; color: floralwhite; font-family: Playfair Display,times,serif; font-size: large;">Contact</a></td>
+                    <td></td>
+                    <td></td>
+                    <td><div id="message" ></div></td>
+                </tr>
+                <tr>
+                    <td><i class='fas fa-phone'  style="margin-left: 30px;">+1 242 4942 290</i></td>
+                </tr>
+                <tr>
+                    <td><i class="fa fa-envelope" style="margin-left: 10px;" >info@TravelRomania.com</i></td>
+                </tr>
+            </table>
+            <br>Copyright &copy; 1996<script>new Date().getFullYear()>2015&&document.write("-"+new Date().getFullYear());</script></br>
+        </div>
+    </footer>
+</html>
